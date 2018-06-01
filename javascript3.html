@@ -1,0 +1,62 @@
+<html>
+<head>
+	<style>
+		#div1{
+		
+		width:300px;height:200px;border:2px solid green; padding:10px;
+		float:left;background:lightblue;
+		}
+		#div2{
+		
+		width:300px;height:200px;border:2px solid red; padding:10px;
+		float:left;margin-left:10px;background:lightpink;
+		}
+		#div3{
+		
+		width:300px;height:200px;border:2px solid blue; padding:10px;
+		float:left;margin-left:10px;background:lightcyan;
+		}
+	</style>
+   <script>
+    
+       function disp(val){
+		if(val=='AP State'){
+			document.getElementById("div1").innerHTML = "Andhra Pradesh is a state bordering India’s southeastern coast. Major cultural landmarks include Tirumala Venkateswara Temple, an ornate hilltop shrine to Hindu’s Vishnu, in the southern part of the state. It’s visited by tens of millions of pilgrims annually. The major northern port of Visakhapatnam has popular beaches like Ramakrishna and Rishikonda lining the Bay of Bengal, offering spots for swimming and surfing."
+		}
+		else if(val=='UP State'){
+			document.getElementById("div2").innerHTML = "Utttarpradesh is a state bordering India’s southeastern coast. Major culturapatnam has popular beaches like Ramakrishna and Rishikonda lining the Bay of Bengal, offering spots for swimming and surfing.l landmarks include Tirumala Venkateswara Temple, an ornate hilltop shrine to Hindu’s Vishnu, in the southern part of the state. It’s visited by tens of millions of pilgrims annually. The major northern port of Visakha"
+		}
+		
+		else if(val=='TS State'){
+			document.getElementById("div3").innerHTML = "Telangana State is a state bordering India’s southeastern coast. Major culjor northern port of Visakha..turapatnam has popular beaches like Ramakrishna and Rishikonda lining the Bay of Bengal, offering spots for swimming and surfing.l landmarks include Tirumala Venkateswara Temple, an ornate hilltop shrine to Hindu’s Vishnu, in the southern part of the state. It’s visited by tens of millions of pilgrims annually. The ma"
+		}
+		else{
+		alert("Select any State");
+		}
+	   }
+    </script>
+   </head>
+<body>
+   <table>
+       <tr>
+           <td>
+		   <select onchange="disp(this.value)" id="state">
+			<option>Select State</option>
+			<option>AP State</option>
+			<option>UP State</option>
+			<option>TS State</option>
+		   </select>
+		   </td>
+       </tr>
+	   <tr>
+          
+       </tr>
+   </table>
+   
+	<div id="div1" onclick="disp('hide')">Select Any state</div>
+	<div id="div2" onclick="disp('hide')">Select Any state</div>
+	<div id="div3" onclick="disp('hide')">Select Any state</div>
+  
+    
+</body>
+</html>
