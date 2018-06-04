@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+            #box{
+                height: 50px;
+                width:100px;
+                border: 2px solid blue;
+               color: purple;
+            }
+			.count{
+			height:35px;margin-top:10px;
+			background-color:skyblue;
+			width:100px;
+			}
+        </style>
+        <script>
+                function disp(val){
+				console.log(val.length);
+					if(val.length<=10){
+					document.getElementById("div").innerHTML  = val.length;
+					document.getElementById("div").style.background="green";
+					document.getElementById("div").style.width="150px";
+					}
+					else if(val.length>10 && val.length<=20){
+					
+					document.getElementById("div").innerHTML  = val.length;
+					document.getElementById("div").style.background="orange";
+					document.getElementById("div").style.width="250px";
+					}
+					else if(val.length>20 && val.length<=30){
+					
+					document.getElementById("div").innerHTML  = val.length;
+					document.getElementById("div").style.background="red";
+					document.getElementById("div").style.width="400px";
+					} 
+					else if(val.length>30)
+					{
+					document.getElementById("div").style.background="gray";
+					document.getElementById("div").innerHTML = "overflow";
+					document.getElementById("div").style.textAlign="center";
+					document.getElementById("div").style.color="brown";
+					}
+					 
+					else{
+					 document.getElementById("div").innerHTML = "Please enter the value";
+					}
+                  
+                }
+          </script>         
+    </head>
+    <body>
+        <!-- onkeyup , onkeydown, onkeypress
+		assignment : 
+		char length upto 10 - green, width : 150px.
+		char length from 10 to 20 - orange, width : 250px.
+		char length from 20 to 30 - red , width : 400px.
+		
+		-->
+		<div>
+        <textarea  id="box" onkeyup="disp(this.value)"></textarea>
+		</div>
+		<div>
+			<div class="count" id="div"></div>
+		</div>
+    </body>
+</html>
